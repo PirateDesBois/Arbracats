@@ -1,11 +1,11 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-        <nav class="navbar navbar-expand-lg bg-light p-0">
+        <nav class="navbar navbar-expand-lg bg-black p-0">
                 <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><img alt="Arbracats logo" class="logo" src="@/assets/logo2.png"
+                        <a class="navbar-brand" href="#"><img alt="Arbracats logo" class="logo" src="@/assets/logowhite.png"
                                         width="100" /></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -15,13 +15,13 @@ import { RouterLink, RouterView } from 'vue-router'
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                                        <RouterLink class="nav-link text-dark fw-bold pt-4" to="/">Home</RouterLink>
+                                                        <RouterLink class="nav-link text-light pt-4" to="/">Home</RouterLink>
                                         </li>
                                         <li class="nav-item">
-                                                        <RouterLink class="nav-link text-dark fw-bold pt-4" to="/about">About</RouterLink>
+                                                        <RouterLink class="nav-link text-light pt-4" to="/about">About</RouterLink>
                                         </li>
                                         <li class="nav-item">
-                                                        <RouterLink class="nav-link text-dark fw-bold pt-4" to="/products">Products</RouterLink>
+                                                        <RouterLink class="nav-link text-light pt-4" to="/products">Products</RouterLink>
                                         </li>
                                 </ul>
                                 <form class="d-flex" role="search">
@@ -30,4 +30,12 @@ import { RouterLink, RouterView } from 'vue-router'
                                 </form>
                         </div>
                 </div>
-</nav></template>
+</nav>
+</template>
+<style scoped>
+.navbar{
+        position:fixed;
+        width:100%;
+}
+
+</style>
